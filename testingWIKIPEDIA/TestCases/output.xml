@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211206 18:52:38.212" rpa="false" schemaversion="2">
+<suite id="s1" name="wikipediaTestCases" source="C:\Users\FalGie\Documents\0 Me\New folder\source\belajarRobotFrameWorkNMMS\testingWIKIPEDIA\TestCases\wikipediaTestCases.robot">
+<kw name="Open my Browser" library="wikipediaKeywords" type="SETUP">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211206 18:52:38.527" level="INFO">Opening browser 'CHROME' to base url 'https://www.wikipedia.org/'.</msg>
+<status status="PASS" starttime="20211206 18:52:38.526" endtime="20211206 18:52:40.715"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211206 18:52:40.716" endtime="20211206 18:52:40.834"/>
+</kw>
+<status status="PASS" starttime="20211206 18:52:38.525" endtime="20211206 18:52:40.834"/>
+</kw>
+<test id="s1-t1" name="Searching Document">
+<kw name="Input text for searching" library="wikipediaKeywords">
+<arg>${txtSearching}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_search}</arg>
+<arg>${txtSearching}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211206 18:52:40.836" level="INFO">Typing text 'marvel MCU' into text field 'id:searchInput'.</msg>
+<status status="PASS" starttime="20211206 18:52:40.836" endtime="20211206 18:52:40.961"/>
+</kw>
+<status status="PASS" starttime="20211206 18:52:40.835" endtime="20211206 18:52:40.962"/>
+</kw>
+<kw name="Click Searching" library="wikipediaKeywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${btn_searching}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211206 18:52:40.964" level="INFO">Clicking element 'xpath://i[contains(text(),'Search')]'.</msg>
+<status status="PASS" starttime="20211206 18:52:40.963" endtime="20211206 18:52:43.223"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Marvel Cinematic Universe</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20211206 18:52:43.397" level="INFO">Current page contains text 'Marvel Cinematic Universe'.</msg>
+<status status="PASS" starttime="20211206 18:52:43.223" endtime="20211206 18:52:43.398"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${link_doc}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211206 18:52:43.398" level="INFO">Clicking element 'link:Marvel Cinematic Universe'.</msg>
+<status status="PASS" starttime="20211206 18:52:43.398" endtime="20211206 18:52:44.675"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211206 18:52:46.690" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211206 18:52:44.675" endtime="20211206 18:52:46.690"/>
+</kw>
+<status status="PASS" starttime="20211206 18:52:40.963" endtime="20211206 18:52:46.690"/>
+</kw>
+<status status="PASS" starttime="20211206 18:52:40.834" endtime="20211206 18:52:46.690"/>
+</test>
+<kw name="Close my browser" library="wikipediaKeywords" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20211206 18:52:46.692" endtime="20211206 18:52:48.921"/>
+</kw>
+<status status="PASS" starttime="20211206 18:52:46.692" endtime="20211206 18:52:48.921"/>
+</kw>
+<status status="PASS" starttime="20211206 18:52:38.214" endtime="20211206 18:52:48.921"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="wikipediaTestCases">wikipediaTestCases</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
