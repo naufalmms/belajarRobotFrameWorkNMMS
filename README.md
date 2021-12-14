@@ -15,7 +15,8 @@ Apa saja yang harus disiapkan sebelum melakukan test, install bahan bahan yang d
 - IDE PyCharm Community
     - <a href="https://www.jetbrains.com/pycharm/download/#section=windows"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/PyCharm_Icon.svg/1200px-PyCharm_Icon.svg.png" alt="Download PyCharm" width="60"></a>
 - Plugin Robot Framework & Selenium
-- Web Driver
+- Web Driver Chrome
+    - <a href="https://chromedriver.chromium.org/downloads"><img src="https://www.tutorialandexample.com/wp-content/uploads/2019/10/Selenium-Web-Driver-Characteristics.png" alt="Download PyCharm" width="60"></a>
 
 
 ## Struktur
