@@ -13,6 +13,7 @@ Apa saja yang harus disiapkan sebelum melakukan test, install bahan bahan yang d
 - Python Pip
     - pip install pip
 - IDE PyCharm Community
+    - <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/PyCharm_Icon.svg/1200px-PyCharm_Icon.svg.png" width="300">
 - Plugin Robot Framework & Selenium
 - Web Driver
 
